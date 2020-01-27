@@ -1,0 +1,31 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+
+    compileOptions {
+        kotlinOptions.freeCompilerArgs += ['-module-name', "com.github.ChuckerTeam.Interceptor.library-no-op"]
+    }
+
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+    }
+}
+
+task sourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    archiveClassifier.set('sources')
+}
+
+artifacts {
+    archives sourcesJar
+}
+
+dependencies {
+    implementation "com.squareup.okhttp3:okhttp:$okhttp3Version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+}
+
+apply from: rootProject.file('gradle/gradle-mvn-push.gradle')
+apply from: rootProject.file('gradle/kotlin-static-analysis.gradle')

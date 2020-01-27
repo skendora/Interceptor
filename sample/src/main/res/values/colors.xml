@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="interceptor_primary_color">#0097dc</color>
+    <color name="interceptor_primary_light_color">#330097dc</color>
+    <color name="interceptor_primary_dark_color">#330097dc</color>
+    <color name="interceptor_secondary_color">#00e676</color>
+    <color name="interceptor_secondary_light_color">#00da9d</color>
+    <color name="interceptor_secondary_dark_color">#7cd39f</color>
+    <color name="interceptor_primary_text_color">#ffffff</color>
+    <color name="interceptor_secondary_text_color">#000000</color>
+</resources>

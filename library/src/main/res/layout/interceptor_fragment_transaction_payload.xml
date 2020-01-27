@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:layoutDirection="ltr"
+    tools:context="com.magicjack.interceptor.internal.ui.transaction.TransactionPayloadFragment">
+
+    <ProgressBar
+        android:id="@+id/progress_loading_transaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_margin="@dimen/interceptor_doub_grid"
+        android:visibility="visible" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/transaction_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:visibility="invisible"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/interceptor_octa_grid"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+</FrameLayout>

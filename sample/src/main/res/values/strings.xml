@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Interceptor Sample</string>
+    <string name="open_http_activity">HTTP activity</string>
+    <string name="launch_interceptor_directly">Launch Interceptor directly</string>
+    <string name="trigger_exception">Trigger an exception</string>
+
+    <string name="intro_title">Welcome!!!</string>
+    <string name="intro_body">You can use this sample app to do some HTTP networking and to see how Interceptor can help you debug your networking calls.</string>
+</resources>

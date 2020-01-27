@@ -1,0 +1,7 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/interceptor_primary_color</item>
+        <item name="colorPrimaryDark">@color/interceptor_primary_dark_color</item>
+        <item name="colorAccent">@color/interceptor_secondary_color</item>
+    </style>
+</resources>

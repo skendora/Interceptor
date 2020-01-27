@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ ~ Copyright (C) 2017 Jeff Gilfelt.
+ ~
+ ~ Licensed under the Apache License, Version 2.0 (the "License");
+ ~ you may not use this file except in compliance with the License.
+ ~ You may obtain a copy of the License at
+ ~
+ ~      http://www.apache.org/licenses/LICENSE-2.0
+ ~
+ ~ Unless required by applicable law or agreed to in writing, software
+ ~ distributed under the License is distributed on an "AS IS" BASIS,
+ ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ ~ See the License for the specific language governing permissions and
+ ~ limitations under the License.
+ -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Interceptor.Theme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/interceptor_color_primary</item>
+        <item name="colorPrimaryDark">@color/interceptor_color_primary_variant</item>
+        <item name="colorSecondary">@color/interceptor_color_secondary</item>
+        <item name="android:colorBackground">@color/interceptor_color_background</item>
+        <item name="colorSurface">@color/interceptor_color_surface</item>
+        <item name="colorError">@color/interceptor_status_error</item>
+        <item name="colorOnPrimary">@color/interceptor_color_on_primary</item>
+        <item name="colorOnSecondary">@color/interceptor_color_on_secondary</item>
+        <item name="colorOnBackground">@color/interceptor_color_on_background</item>
+        <item name="colorOnSurface">@color/interceptor_color_on_surface</item>
+        <item name="colorOnError">@color/interceptor_color_on_error</item>
+    </style>
+
+    <style name="Interceptor.TextAppearance.ListItem" parent="android:TextAppearance">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Interceptor.TextAppearance.Label" parent="android:TextAppearance.Small">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Interceptor.TextAppearance.Value" parent="android:TextAppearance.Small">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textIsSelectable">true</item>
+    </style>
+
+    <style name="Interceptor.TextAppearance.TransactionTitle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:gravity">top</item>
+        <item name="android:textSize" tools:ignore="SpUsage">16dp</item>
+        <item name="android:maxLines">2</item>
+    </style>
+</resources>
